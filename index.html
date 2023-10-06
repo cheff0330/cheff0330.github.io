@@ -12,40 +12,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 
 <style type="text/css">
-	#dolphin{
+
+	.creature{
 		display:inline-block;
-/*		border-radius:50%;*/
 		background-size:cover;
 		background-position: center;
 		width:300px;
 		height:300px;
+		background-size: contain;
+	background-repeat: no-repeat;
+
+	}
+
+
+	#dolphin{
+
 		background-image:url(https://i.pinimg.com/originals/51/89/e5/5189e56b9b05f2d1ec7e50a9d80967bc.gif);
-background-size: contain;
-background-repeat: no-repeat;
-}
+
+	}
  
  
 	#fish{
-		display:inline-block;
-		width: 300px;
-		height: 300px;
-		background-image: url(https://25.media.tumblr.com/tumblr_me6k77Bvbc1rils3do1_500.gif);
-background-size: cover;
-background-repeat: no-repeat;
-/*background-color:red;*/
-background-position:center;
-  
+		
+		background-image: url(https://i.pinimg.com/originals/d0/2a/a0/d02aa0876bf228e6f92047cc2177c891.gif);
+
 	}
 		
 	#octopus{
-		display: inline-block;
-		width: 300px;
-		height: 300px;
+	
 		background-image: url(https://64.media.tumblr.com/1978a15455516b5a778553fd703f9976/4c8545aeee3d3c11-14/s500x750/988ba1b4b4a2eb7dca3bcaabed8a122079f94248.gif);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+
 	}
+body {
+	background-color:#0000;
+	color: lightblue;
+	background: black;
+	font-size: 40px;
+}
+
+.text{
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
 </style>
 
 
@@ -62,23 +74,32 @@ background-position: center;
 
 <center>
 
-	<h1>Look at my sea animals!</h1>
-	<p style="text-align: left;">dolphin: </p>
-	<p style="text-align: center;">fishy: </p>
-	<p style="text-align: right;">octopus:</p>
+	<h1>WELCOME TO BROOKE'S WEBSITE!</h1>
+	<font='20' face='JOURNAl'></font>
+	
 
 <!-- Look at my sea animals! div. -->
 
 <a href="projects.html">
 
-<div id="dolphin"></div>
+<div class ="creature" id="dolphin">
+	<div class="text">PROJECTS: </div>
+</div>
 </a>
 
 <a href="journal.html">
 
-<div id="fish"></div>
+<div class ="creature" id="fish">
+		<div class="text">JOURNAL:</div>
 
-<div id="octopus"></div>
+</div>
+
+<div class ="creature" id="octopus">
+		<div class="text">INDEX: </div>
+
+	
+
+</div>
 </a>
 
 </center>

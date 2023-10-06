@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	
+	#square{
+		width: 500px;
+		height: 500px;
+		background-image: url(https://images.squarespace-cdn.com/content/v1/57d4b0456a49635bed4dae6c/1626969931988-I93GIW9N94QL0SCXYDU6/suns_final_1x1_600px.gif?format=2500w);
+		animation-name: dance;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		position: absolute;
+	}
+
+	@keyframes dance{
+
+		0%{
+			width: 500px;
+			height: 500px;
+		}
+
+		50%{
+			width: 250px;
+			height: 250px;	
+			border-radius: 50%;
+			transform: rotate(180deg);
+			background-color: deeppink;
+
+		}
+
+
+		100%{
+			width: 800px;
+			height: 800px;
+		}
+	}
+
+	#box{
+
+		width: 150px;
+		height: 150px;
+		background-image: url(https://images.squarespace-cdn.com/content/v1/57d4b0456a49635bed4dae6c/1654784361989-3XL2HFXG3RSJHJZBQ1D4/BR_MVP_lebron.gif?format=2500w);
+		margin:10px;
+		animation-name: dance2;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		position: absolute;
+
+	}
+
+
+@keyframes dance2{
+
+		0%{
+			width: 150px;
+			height: 150px;
+		}
+
+		50%{
+			width: 100px;
+			height: 100px;	
+			border-radius: 50%;
+			transform: rotate(360deg);
+			background-color: skyblue;
+
+		}
+
+
+
+		100%{
+			width: 500px;
+			height: 500px;
+		}
+
+	
+	background-color
+</style>
+	
+</head>
+<body>
+
+
+<div id="square"></div>
+
+
+<div id="box"></div>
+</body>
+</html>
