@@ -13,7 +13,7 @@
 
 <style type="text/css">
 
-	.creature{
+	.places{
 		display:inline-block;
 		background-size:cover;
 		background-position: center;
@@ -25,26 +25,26 @@
 	}
 
 
-	#dolphin{
+	#italy{
 
-		background-image:url(https://faculty.washington.edu/chudler/gif/dolphinsp.gif);
+		background-image:url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/venice-itaky-david-cooper.jpg);
 		width:400px;
 		height:400px;
 
 	}
  
  
-	#fish{
+	#france{
 		
-		background-image: url(https://24.media.tumblr.com/60e8109d4e211be2032e9563417f8390/tumblr_mmkj5h4ndE1rgpyeqo1_250.gif);
+		background-image: url(https://www.state.gov/wp-content/uploads/2023/07/shutterstock_667548661v2.jpg);
 		width:400px;
 		height:400px;
 
 	}
 		
-	#sea{
+	#greece{
 	
-		background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8341c751291793.58e8955fa319f.gif);
+		background-image: url(https://a.cdn-hotels.com/gdcs/production18/d1838/041ae6b1-0a88-4c22-a648-53a22dd4a006.jpg?impolicy=fcrop&w=800&h=533&q=medium);
 		width: 400px;
 		height:400px;
 
@@ -64,9 +64,19 @@ body {
 a{
 	text-decoration:none;
 	color:black;
-	font-family: fantasy;
+	font-family: monospace;
 }
+	#airplane {
+		width: 200px;
+		height: 200px;
+		background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dcvwofr-e6ea9301-cd11-42d3-9460-5a3bb2b88aa7.png/v1/fill/w_900,h_807/boeing_airplane_in_flight_on_a_transparent_backgro_by_prussiaart_dcvwofr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODA3IiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kY3Z3b2ZyLWU2ZWE5MzAxLWNkMTEtNDJkMy05NDYwLTVhM2JiMmI4OGFhNy5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.weUqw6ZAh5gUUVb-ILdVZkSCjLj7hZW8JA2y9tCMrM4);
+		bottom: 100px;
+		background-size: contain;
+		background-size: cover;
+		position: absolute;
+		left: 100px;
 
+	}
 </style>
 
 
@@ -89,22 +99,22 @@ a{
 	
 
 <!-- Look at my sea animals! div. -->
-
+<div id="airplane"></div>
 <a href="projects.html">
 
-<div class ="creature" id="dolphin">
+<div class ="places" id="italy">
 	<div class="text">PROJECTS: </div>
 </div>
 </a>
 
 <a href="journal.html">
 
-<div class ="creature" id="fish">
+<div class ="places" id="france">
 		<div class="text">JOURNAL:</div>
 
 </div>
 
-<div class ="creature" id="sea">
+<div class ="places" id="greece">
 		<div class="text">INDEX: </div>
 
 	
@@ -113,5 +123,11 @@ a{
 </a>
 
 </center>
+<script type="text/javascript">
+	
+	airplane.addEventListener("click", function(){airplane.style.right ="0px";
+})
+
+</script>
 </body>
 </html>
