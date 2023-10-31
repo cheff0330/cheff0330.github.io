@@ -21,7 +21,7 @@
 		background-size:contain;
 		background-repeat:no-repeat;
 		position:absolute;
-		left:100px;
+		left:50px;
 		top:350px;
 	}
 
@@ -32,10 +32,9 @@
 		background-repeat:no-repeat;
 		background-size: contain;
 		position:absolute;
-		right:0px;
+		left:90%;
 		top:75px;
-		transition: 4s;
-
+		transition: 3s;
 
 
 	}
@@ -49,8 +48,8 @@
 		background-size: contain;
 		position: absolute;
 		top: 0px ;
-		left: 200px;
-		transition: 4s;
+		left: 0px;
+		transition: 1s;
 		
 		
 	}
@@ -64,13 +63,8 @@
 
 </style>
 
-<a href=""></a>
-
-
-
-
-
 <audio id="sound" src="crash.mp3" ></audio>
+<audio id= "plane" src="planesound.mp3"></audio>
 
 <div id="dog"></div>
 <div id="airplane"></div>
@@ -80,11 +74,14 @@
 
 		
 		car.addEventListener("click", function(){
-			car.style.left = "5px";
+			car.style.left = "0%";
+			console.log("hello?")
 			sound.play()
 	})
-		airplane.addEventListener("click",function(){airplane.style.right = 
-			"10px";
+		airplane.addEventListener("click",function(){airplane.style.left = 
+			"100%";
+			plane.play()
+
 	})
 
 

@@ -67,14 +67,14 @@ a{
 	font-family: monospace;
 }
 	#airplane {
-		width: 200px;
-		height: 200px;
+		width: 300px;
+		height: 300px;
 		background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dcvwofr-e6ea9301-cd11-42d3-9460-5a3bb2b88aa7.png/v1/fill/w_900,h_807/boeing_airplane_in_flight_on_a_transparent_backgro_by_prussiaart_dcvwofr-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODA3IiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kY3Z3b2ZyLWU2ZWE5MzAxLWNkMTEtNDJkMy05NDYwLTVhM2JiMmI4OGFhNy5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.weUqw6ZAh5gUUVb-ILdVZkSCjLj7hZW8JA2y9tCMrM4);
 		bottom: 100px;
-		background-size: contain;
 		background-size: cover;
 		position: absolute;
 		left: 100px;
+		transition:1s;
 
 	}
 </style>
@@ -95,7 +95,6 @@ a{
 
 	<h1>WELCOME TO BROOKE'S WEBSITE!</h1>
 
-	<font='20' face='JOURNAl'></font>
 	
 
 <!-- Look at my sea animals! div. -->
@@ -125,7 +124,9 @@ a{
 </center>
 <script type="text/javascript">
 	
-	airplane.addEventListener("click", function(){airplane.style.right ="0px";
+	airplane.addEventListener("click", function(){
+		console.log("hello?")
+		airplane.style.left ="100%";
 })
 
 </script>
