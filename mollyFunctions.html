@@ -7,17 +7,102 @@
 </head>
 <body>
 
-	<script type="text/javascript">
-		
+	<style type="text/css">
 
-		function hello (lkjlkj) {
-			console.log("17" + lkjlkj)
+		.toppings{
+			width: 100px;
+			height: 100px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: top;
+		}
+		
+		#blender{
+			width:600px;
+			height: 600px;
+			background-image: url(blender.png);
+			background-size: contain;
+			bottom:0px;
 		}
 
-		hello("boo")
+		#banana {
+			width: 100px;
+			height: 100px;
+			background-image: url(banana.png);
+			background-size: contain;
+			top: 0px;
+			background-position: top;
+		}
+
+		#strawberry {
+			width: 100px;
+			height: 100px;
+			background-image: url(https://www.hearthsidecountrystore.com/wp-content/uploads/2022/01/10071202179303_2.jpg);
+			background-size: contain;
+			background-size: cover;
+			background-position: top;
+
+		}
+
+		#blueberry {
+			width: 100px;
+			height: 100px;
+			background-image: url(https://erewhonappsftp.s3.us-west-2.amazonaws.com/images/354251000-1.png?date=2023-10-1600:43:30.727);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: top;
+			
+
+			
+			
+		}
+
+
+
+	</style>
+	<h1> Put ingredients into the blener to make a delicious smoothie :) </h1>
+	<div id="blender" class="toppings"></div>
+	 <div id="banana" class="toppings"></div>
+	 <div id="strawberry"class="toppings"></div>
+	 <div id="blueberry"class="toppings"></div>
+	
+	<script type="text/javascript">
+		var hi;
+
+		banana.addEventListener("click", function(){
+			hi = "url(banana.png)"
+		console.log(hi)
+	})
+
+		strawberry.addEventListener("click" , function (){
+			hi = "url(strawberry.png)"
+			console.log(hi)
+		})
+		blueberry.addEventListener("click" , function (){
+			hi = "url(https://erewhonappsftp.s3.us-west-2.amazonaws.com/images/354251000-1.png?date=2023-10-1600:43:30.727)"
+			console.log(hi)
+		})
+
+
+
+		blender.addEventListener("click" , 
+
+		function makeDiv(event) {
+			var image = document.createElement('div');
+			document.body.appendChild(image)
+			image.classList.add("toppings")
+			image.style.position = "absolute"
+			image.style.left = event.clientX-50 +"px"
+			image.style.top = event.clientY-50
+			+"px"
+			image.style.border = "0px"
+			image.style.backgroundImage = hi;
+			console.log(event)
+
+			
+		})
 
 
 	</script>
-
 </body>
 </html>
