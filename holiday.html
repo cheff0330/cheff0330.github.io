@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<style type="text/css">
+	.decor {
+	width: 80px;
+	height: 80px;
+	background-repeat: no-repeat;
+		background-size:contain ;
+		display: inline-block;
+	}
+	#menorah {
+		width: 400px;
+		height: 400px;
+		background-image: url(menorah.png);
+		background-repeat: no-repeat;
+		background-size:contain ;
+
+
+	}
+#candle {
+	width: 80px;
+	height: 80px;
+	background-image: url(candle.png);
+	background-repeat: no-repeat;
+		background-size:contain ;
+}
+
+#gelt {
+	width: 80px;
+	height: 80px;
+	background-image: url(gelt.png);
+	background-repeat: no-repeat;
+		background-size:contain ;
+}
+
+body {
+	background-color:purple;
+}
+</style>
+<div id="gelt" class="decor"></div>
+<div id="candle" class="decor"></div>
+<div id="menorah"></div>
+<script type="text/javascript">
+		var hi;
+
+		candle.addEventListener("click", function(){
+			hi = "url(candle.png)"
+		console.log(hi)
+	})
+		gelt.addEventListener("click", 
+			function(){
+			hi = "url(gelt.png)"
+		console.log(hi)
+	})
+		menorah.addEventListener("click" , 
+
+		function makeDiv(event) {
+			var image = document.createElement('div');
+			document.body.appendChild(image)
+			image.classList.add("decor")
+			image.style.position = "absolute"
+			image.style.left = event.clientX-50 +"px"
+			image.style.top = event.clientY-50
+			+"px"
+			image.style.border = "0px"
+			image.style.backgroundImage = hi;
+			console.log(event)
+
+			})
+
+</script>
+</body>
+</html>

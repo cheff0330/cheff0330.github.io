@@ -14,15 +14,16 @@
 			height: 100px;
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-position: top;
+			display: inline-block;
 		}
 		
-		#blender{
-			width:600px;
-			height: 600px;
-			background-image: url(blender.png);
+		#yogurt{
+			width:500px;
+			height: 500px;
+			background-image: url(yogurt.png);
 			background-size: contain;
-			bottom:0px;
+			background-repeat: no-repeat;
+			
 		}
 
 		#banana {
@@ -60,12 +61,12 @@
 
 
 	</style>
-	<h1> Put ingredients into the blener to make a delicious smoothie :) </h1>
-	<div id="blender" class="toppings"></div>
+	<h1> Put toppings on the yogurt to make a delicious parfait :) </h1>
+	
 	 <div id="banana" class="toppings"></div>
 	 <div id="strawberry"class="toppings"></div>
 	 <div id="blueberry"class="toppings"></div>
-	
+	<div id="yogurt"></div>
 	<script type="text/javascript">
 		var hi;
 
@@ -85,7 +86,7 @@
 
 
 
-		blender.addEventListener("click" , 
+		yogurt.addEventListener("click" , 
 
 		function makeDiv(event) {
 			var image = document.createElement('div');
