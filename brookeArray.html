@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+	#box{
+	width:40%;
+	height: 40%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position:relative;
+	top:30%;
+	left:0%;
+	
+
+
+
+}
+
+#remote{
+
+	width: 100px;
+	height: 110px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuon-N2000-Remote-Control.jpg/800px-Nuon-N2000-Remote-Control.jpg);
+	top: 10%;
+	left: 50%;
+}
+
+#tv{
+	width: 400px;
+	height: 500px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(tv.png);
+}
+
+#text{
+font-size: 30px;
+	
+}
+</style>
+</head>
+
+
+<body>
+	<center>
+<h1>click the remote to find a show to watch</h1>
+<div id="text"></div>
+<div id="tv">
+	<div id="box"></div>
+
+</div>
+<div id="remote"></div>
+
+</center>
+<script type="text/javascript">
+	
+	var shows = ["url(https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/52dae4c7-2ab1-4bb9-ab1c-8100fd54e2f9/525e19cadd275c68e933773cc3bdad91a12fe10e.jpg?submitted=1684658977805&host=wbd-images.prod-vod.h264.io&partner=beamcom)", "url(https://resizing.flixster.com/OYMc1ZWOL-bQ-TdHhRwe9Xu0Ff8=/300x300/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894589_b_v13_ab.jpg)", "url(https://m.media-amazon.com/images/M/MV5BYmMxNjM0NmItNGU1Mi00OGMwLTkzMzctZmE3YjU1ZDE4NmFjXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg)", "url(https://m.media-amazon.com/images/M/MV5BMjA0MDc1NTk0Ml5BMl5BanBnXkFtZTgwMTk2ODA5NDM@._V1_.jpg)","url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10781396_b_v9_ad.jpg)", "url(https://upload.wikimedia.org/wikipedia/en/b/b6/Modern_Family_season_10_poster.jpg)", "url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894445_b_v13_ab.jpg)", "url(https://m.media-amazon.com/images/M/MV5BYWU4ZmI0NTItZjcyNy00MzQ5LThiNDQtZDZkNjg1NWUwN2RhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg)"]
+
+
+	// var random = Math.round(Math.random()*5)
+
+
+	document.addEventListener("click", function(){
+		var random = Math.round(Math.random()*7);
+			box.style.backgroundImage = shows[random]
+
+						
+	})
+
+
+</script>
+</body>
+</html>
