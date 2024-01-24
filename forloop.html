@@ -21,18 +21,26 @@
 
 	<!-- <div class="thing"></div> -->
 <script type="text/javascript">
+
+	var dough;
 	
+	
+
 	function makeDiv (input)
 
-	{
-		var x = document.createElement("div");
-		document.body.appendChild(x)
-		x.classList.add("thing")
+	{ dough = document.createElement("div");
+		document.body.appendChild(dough)
+		dough.classList.add("thing")
+
+		dough.addEventListener("click", function(){
+			console.log(dough)
+			dough.style.backgroundImage = "url(https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2700,h_2700,c_limit/chocolate-chip-cookie.jpg)"
+		})
 		
+}
 
-	}
-
-	for(var i=0; i<1000; i=i+1){
+	for(var i=0; i<1000; i=i+1)
+	{
 		makeDiv()
 	}
 
