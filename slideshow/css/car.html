@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<style type="text/css">
+	
+	#car{
+		width: 400px;
+		height: 300px;
+		background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK_35ZQG9ypSP9K3PdlN4peMCmq4px1F81B4NGBFgyzN8iUEKhAkKHWWoQ4EOf_RQ2dG8&usqp=CAU);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 400px;
+		left:300px;
+	}
+</style>
+
+<div id="car"></div>
+<script type="text/javascript">
+	var x =200
+	var y =200
+document.addEventListener("keydown", function(event){
+	
+
+	if (event.key == "ArrowLeft"){
+		x = x-10;
+		car.style.left = x+"px"
+		console.log(x)
+	}
+
+	if (event.key == "ArrowRight"){
+		x = x+10;
+		car.style.left = x+"px"
+		console.log(x)
+	}
+
+	if (event.key == "ArrowUp"){
+		y = y-10;
+		car.style.top = y+"px"
+		console.log(y)
+	}
+
+
+	if (event.key == "ArrowDown"){
+		y = y+10;
+		car.style.down = y+"px"
+		console.log(y)
+	}
+
+
+
+
+})
+</script>
+
+</body>
+</html>
