@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+		<style type="text/css">
+
+
+	#square {
+		width: 300px;
+		height: 300px;
+		background-image: url(thinker.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+	}
+	</style>
+
+</head>
+<body>
+<h1>click to see what color resembles you</h1>
+<div id="square"></div>
+<!-- //
+1. make a div
+
+2.  use math random to imput a bunch of different colors
+
+3. add an event listener that says on click, imput math random to generate a new color each time.
+
+	d --> 
+<script type="text/javascript">
+
+square.addEventListener("click", function(){
+	console.log()
+	var red = Math.random()*255
+	var green = Math.random()*255
+	var blue = Math.random()*255
+	document.body.style.backgroundColor="rgb(" + red +"," + green + "," + blue+")"
+})
+	
+console.log(Math.random()*255)
+
+</script>
+
+</body>
+</html>
