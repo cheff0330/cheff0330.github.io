@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#wall{
+			background-color:lightyellow;
+			margin:0px;
+			width: 100%;
+			height:1000px;
+			z-index: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+
+		#cat{
+			background-image: url(couch1.png);
+			background-repeat: no-repeat;
+			background-size:contain;
+			width:600px;
+			height: 500px;
+			position: absolute;
+			left:40%;
+			top:250px;
+			z-index: 10;
+		}
+
+		#chair{
+			background-image: url(chair3.png);
+			width:250px;
+			height: 250px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			top: 300px;
+			left: 23%;
+			position: absolute;
+			z-index: 10;
+
+		}
+
+		#picture{
+			width: 300px;
+			height: 200px;
+			background-image: url(picture.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left:70%;
+			top: 50px;
+			z-index: 5;
+		}
+
+		#win{
+			width: 300px;
+			height: 200px;
+			background-image: url(window.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 30%;
+			top: 50px;
+
+		}
+
+		#lamp{
+
+			width: 300px;
+			height: 300px;
+			background-image: url(lamp.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 250px;
+			left: 80%;
+			z-index: 10;
+		}
+		#table{
+			width: 400px;
+			height: 280px;
+			background-image: url(table.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 500px;
+			left: 50%;
+			z-index: 15;
+		}
+
+#doors{
+			width: 250px;
+			height: 350px;
+			background-image: url(door.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: 105px;
+			left: 0%;
+			z-index: 5;
+		}
+		body{
+			margin:0px;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="wall"></div>
+		<div id="cat"></div>
+		<div id="chair"></div>
+		<div id="picture"></div>
+		<div id="win"></div>
+		<div id="lamp"></div>
+		<div id="table"></div>
+		<div id="doors"></div>
+	<script type="text/javascript">
+		var wallpaperNumber =-1;
+		var wallpaper = 
+		["wallpaper1", "wallpaper2", "wallpaper3", "wallpaper4", "wallpaper5", "wallpaper6", "wallpaper7","wallpaper8", "wallpaper9",]
+
+
+		wall.addEventListener("click", function(){
+		 wallpaperNumber = wallpaperNumber +1;
+		wall.style.backgroundImage = "url("+ wallpaper[wallpaperNumber] + ".jpg)"
+
+		if (wallpaperNumber == 8){
+			wallpaperNumber = -1;
+
+		}
+		
+})
+
+
+var couchNumber =-1;
+var couch = ["couch1", "couch2", "couch3", "couch4", "couch5", "couch"]
+	
+
+cat.addEventListener("click", function(){
+		 couchNumber = couchNumber+1;
+		cat.style.backgroundImage = "url("+ couch[couchNumber] + ".png)"
+
+		if (couchNumber == 5){
+			couchNumber = -1;
+
+		}})
+
+var comfyNumber =-1;
+var comfy = ["chair1", "chair2", "chair3", "chair4", "chair5","chair6"]
+	
+
+chair.addEventListener("click", function(){
+		 comfyNumber = comfyNumber+1;
+		chair.style.backgroundImage = "url("+ comfy[comfyNumber] + ".png)"
+
+		if (comfyNumber == 5){
+			comfyNumber = -1;
+
+		}})
+
+
+var picNumber =-1;
+var pic = ["picture1", "picture2", "picture3", "picture4", "picture5", "picture6", "picture7","picture8","picture"]
+	
+
+picture.addEventListener("click", function(){
+		 picNumber = picNumber+1;
+		picture.style.backgroundImage = "url("+ pic  [picNumber] + ".png)"
+
+		if (picNumber == 8){
+			picNumber = 0;
+
+		}})
+
+var viewNumber =-1;
+var view = ["window1", "window2", "window3", "window4", "window5","window"]
+	
+
+win.addEventListener("click", function(){
+		 viewNumber = viewNumber+1;
+		win.style.backgroundImage = "url("+ view  [viewNumber] + ".png)"
+
+		if (viewNumber == 5){
+			viewNumber = -1;
+
+		}})
+
+var lightNumber =-1;
+var light = ["lamp1", "lamp2", "plant3", "plant4", "plant5","lamp","lamp6"]
+	
+
+lamp.addEventListener("click", function(){
+		 lightNumber = lightNumber+1;
+		lamp.style.backgroundImage = "url("+ light  [lightNumber] + ".png)"
+
+		if (lightNumber == 6){
+			lightNumber = -1;
+
+		}})
+
+var coffeeNumber =-1;
+var coffee = ["table", "table1", "table2", "table3","table4", "table5"]
+	
+
+table.addEventListener("click", function(){
+		 coffeeNumber = coffeeNumber+1;
+		table.style.backgroundImage = "url("+ coffee  [coffeeNumber] + ".png)"
+
+		if (coffeeNumber == 5){
+			coffeeNumber = -1;
+
+		}})
+	</script>
+
+
+
+
+</body>
+</html>
