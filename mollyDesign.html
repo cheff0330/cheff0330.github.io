@@ -11,7 +11,7 @@
 			background-color:lightyellow;
 			margin:0px;
 			width: 100%;
-			height:1000px;
+			height:1200px;
 			z-index: 0;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -103,12 +103,18 @@
 			z-index: 5;
 		}
 		body{
-			margin:0px;
+			
+			margin: 0%;
+
 
 		}
 	</style>
 </head>
 <body>
+
+<!-- 	<p>Design Your Own Living Room</p>
+<p>Click on each item to customize the room the way you like!</p>
+	 -->
 	<div id="wall"></div>
 		<div id="cat"></div>
 		<div id="chair"></div>
@@ -149,14 +155,14 @@ cat.addEventListener("click", function(){
 		}})
 
 var comfyNumber =-1;
-var comfy = ["chair1", "chair2", "chair3", "chair4", "chair5","chair6"]
+var comfy = ["chair1", "chair2", "chair3", "chair4", "chair5","chair6","chair7"]
 	
 
 chair.addEventListener("click", function(){
 		 comfyNumber = comfyNumber+1;
 		chair.style.backgroundImage = "url("+ comfy[comfyNumber] + ".png)"
 
-		if (comfyNumber == 5){
+		if (comfyNumber == 6){
 			comfyNumber = -1;
 
 		}})
@@ -202,14 +208,14 @@ lamp.addEventListener("click", function(){
 		}})
 
 var coffeeNumber =-1;
-var coffee = ["table", "table1", "table2", "table3","table4", "table5"]
+var coffee = ["table", "table1", "table2", "table3","table4", "table5", "table6"]
 	
 
 table.addEventListener("click", function(){
 		 coffeeNumber = coffeeNumber+1;
 		table.style.backgroundImage = "url("+ coffee  [coffeeNumber] + ".png)"
 
-		if (coffeeNumber == 5){
+		if (coffeeNumber == 6){
 			coffeeNumber = -1;
 
 		}})
